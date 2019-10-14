@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0c1df1ff-0491-48c6-a27a-42df259575f7",
+            "Value": {
+                "id": "e4c896b5-70b8-4131-bf05-a4be1ba9420c",
+                "resourcePath": "sprites\/spr_background\/spr_background.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1bc0da6d-d3d1-4d0f-bac2-96f720c171d8",
             "Value": {
                 "id": "6f5b9605-3026-4427-bc0b-4a187f53722f",
@@ -191,6 +199,14 @@
             }
         },
         {
+            "Key": "a633ac5d-ba99-488e-a052-4600969228ad",
+            "Value": {
+                "id": "17e47f1a-38b7-48fe-a160-41706d895af2",
+                "resourcePath": "sprites\/spr_playerWalk\/spr_playerWalk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "d9b5a51c-7bfb-4191-9a74-67b497408f3c",
@@ -255,6 +271,14 @@
             }
         },
         {
+            "Key": "ec15bd18-9a55-4c12-97b2-b68c1d163fc1",
+            "Value": {
+                "id": "50debefc-c68f-4386-af6a-47bd5a11b7c2",
+                "resourcePath": "sprites\/spr_playerJump\/spr_playerJump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ed5a3c9f-0b00-4ec7-9298-18cd169803bb",
             "Value": {
                 "id": "b3bc53bc-d9b6-475e-915c-75dfdae9bd63",
@@ -268,6 +292,22 @@
                 "id": "e31ed432-e93d-4757-8fc4-c12a1e865792",
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f5d43f01-1555-4134-88e1-0ab8b2aba3b1",
+            "Value": {
+                "id": "b2cb8244-db79-4f49-af8c-f91ff971e272",
+                "resourcePath": "sprites\/spr_bat\/spr_bat.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fcf52881-9ac3-4287-863e-e6611e4bb89a",
+            "Value": {
+                "id": "47ba23d0-4224-4e0e-b380-6e85c3822b28",
+                "resourcePath": "objects\/obj_bat\/obj_bat.yy",
+                "resourceType": "GMObject"
             }
         }
     ],

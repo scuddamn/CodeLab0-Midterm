@@ -33,3 +33,29 @@ if (place_meeting(x, y + 1, obj_wall)) && (key_jump){
 	 
 	 vspeed = 0;
  }
+ 
+ //animation
+ 
+ if(!place_meeting(x, y + 1, obj_wall)){
+	 sprite_index = spr_playerJump;
+	 image_speed = 0;
+	 
+	 if(sign(vspeed) > 0) image_index = 1; else image_index = 0;
+			 
+
+ } else {
+	 image_speed = 1;
+	 
+	 if(hspeed == 0){
+		 sprite_index = spr_player;
+	 } else {
+		 sprite_index = spr_playerWalk;
+		 }
+ 
+ }
+ 
+if(hspeed != 0) {
+	image_speed = 1;
+	sprite_index = spr_playerWalk;
+	image_xscale = sign(hspeed) * -1;
+}

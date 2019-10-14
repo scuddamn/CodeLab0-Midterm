@@ -4,5 +4,5 @@
 hspeed = 0;
 vspeed = 0;
 grv = 0.3;
-walkSpeed = 4; 
+walkSpeed = 5; 
 
