@@ -1,8 +1,8 @@
 /// @description movement and collision
 // You can write your code in this editor
 
-key_left = keyboard_check(vk_left);
-key_right = keyboard_check(vk_right);
+key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
+key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space);
 
 var move = key_right - key_left; 
@@ -54,8 +54,21 @@ if (place_meeting(x, y + 1, obj_wall)) && (key_jump){
  
  }
  
+ //projectiles
+ meowDelay = meowDelay -1;
+if(mouse_check_button(mb_left)) && (meowDelay < 0){
+	sprite_index = spr_playerMeow;
+	meowDelay = 5;
+	with(instance_create_layer(x, y, "Projectiles", obj_meow)){
+		speed = 10;
+		image_angle = point_direction(x, y, mouse_x, mouse_y);
+		direction = image_angle;
+
+	}
+}
+ 
 if(hspeed != 0) {
-	image_speed = 1;
-	sprite_index = spr_playerWalk;
+	//image_speed = 1;
+	//sprite_index = spr_playerWalk;
 	image_xscale = sign(hspeed) * -1;
 }
